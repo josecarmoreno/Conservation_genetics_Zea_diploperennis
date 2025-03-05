@@ -6,3 +6,5 @@ The first script <strong>"prefiltering_schemes.sh"</strong> is to eliminate mult
 <p>The script <strong>"dataset1_structure.sh"</strong> contains a filtring scheme for a study-wide data set. The resulting data set is intended for structure analysis and contains 130 individuals and 3,703 SNPs.<br>
 The script <strong>"dataset2_demography.sh"</strong> contains a filtering scheme for within-population data sets. The resulting data sets are intended for demography analysis. The Jalisco data set consists of 43 individuals and 4,056 SNPs, and the Nayarit data set consists of 89 individuals and 3,363 SNPs.<br>
 The script <strong>"dataset3_diversity.sh"</strong> contains a filtering scheme for a within-population data sets. The resulting data sets are intended for diversity analysis. The Jalisco data set consists of 45 individuals and 8,369 SNPs, and the Nayarit data set consists of 89 individuals and 4,385 SNPs.</p>
+
+### Genetic Structure Analysis
