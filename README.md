@@ -8,4 +8,4 @@ The script <strong>"dataset2_demography.sh"</strong> contains a filtering scheme
 The script <strong>"dataset3_diversity.sh"</strong> contains a filtering scheme for a within-population data sets. The resulting data sets are intended for diversity analysis. The Jalisco data set consists of 45 individuals and 8,369 SNPs, and the Nayarit data set consists of 89 individuals and 4,385 SNPs.</p>
 
 ### Genetic Structure Analysis
-<p>The script <strong>"DAPC.R</strong> finds the number of clusters that better explains the data and then runs a Discriminant Analysis of Principal Components with such number of clusters.</p>
+<p>The script <strong>"DAPC.R"</strong> finds the number of clusters that better explains the data and then runs a Discriminant Analysis of Principal Components with such number of clusters.</p>
