@@ -11,3 +11,5 @@ The script <strong>"dataset3_diversity.sh"</strong> contains a filtering scheme 
 <p>The script <strong>"DAPC.R"</strong> finds the number of clusters that better explains the data and then runs a Discriminant Analysis of Principal Components with such number of clusters using the R package adegenet (Jombart and Ahmed 2011).</p>
 
 <p>The script <strong>"admixture_d1".sh</strong> performs an admixture analysis using the software ADMIXTURE (Alexander et al. 2009) for a K of 1-11. The R script <strong>"plot_admixture.R"</strong> plots the cross-error for each K, plots ancestry factors (Q) for K 1-11, and save the plots of the Q values.</p>
+
+<p>The script <strong>"vcf2BA3.sh"</strong> transforms a vcf file to BA3 format to perform migration analysis in BayesAss 3.0.5 (Wilson and Rannala 2003).</p>
