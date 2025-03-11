@@ -1,6 +1,7 @@
 ## This script reports how we adjusted the mixing parameters according to the acceptance rates
 
 ### First we perform a migration analysis with the default mixing parameters (allele frequencies=0.1, inbreeding coefficients=0.1, migration rates=0.1)
+### We use the -v flag for the verbose screen output and the -t flag for the output of a trace file
 
 ./BA3SNP -i10000000 -b1000000 -v -t ~/Documentos/Z_diploperennis/data/dataset1diploperennis_data_d1_k2.ba3 
 
