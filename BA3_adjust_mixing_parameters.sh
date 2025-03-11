@@ -1,4 +1,4 @@
-## This script reports how we adjusted the mixing parameters according to the acceptance rates
+## This script reports how we adjusted the mixing parameters according to the acceptance rates for the migration analysis in BayesAss 3.0.5 (Wilson and Rannala 2003).
 
 ### First we perform a migration analysis with the default mixing parameters (allele frequencies=0.1, inbreeding coefficients=0.1, migration rates=0.1)
 ### We use the -v flag for the verbose screen output and the -t flag for the output of a trace file
