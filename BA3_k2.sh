@@ -19,6 +19,9 @@ mkdir ~/Documentos/Z_diploperennis/out/BA3/K_2/10th_run
 ### We used the mixing parameters we obtained through the adjustments in the script BA3_adjust_mixing_parameters.sh
 ### We also moved the output of each run to their respective directory
 
+### Make a copy of the genomic data in BA3 format to the directory where is BA3
+
+cp ~/Documentos/Z_diploperennis/data/dataset1/diploperennis_data_d9_k2.ba3 ~Descargas/BA3/BA3
 
 ### 1st_run
 
