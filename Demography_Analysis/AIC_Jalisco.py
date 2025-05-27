@@ -1,11 +1,16 @@
+### This script estimates the Akaike Inference Criterion (AIC) on each model simulated on Jalisco
+## Import the modules we will use in this script
+
 import pandas as pd
 import glob
 import os
 
-# Diccionario para registrar los resultados
+## Create a dictionary in which the results of the AIC will be registered
+
 aic_results = {}
 
-# Número de parámetros por modelo
+## Define the number of parameters per model
+
 param_counts = {
     'growth': 2,
     'bottlegrowth': 3,
@@ -15,11 +20,15 @@ param_counts = {
     'twoepoch': 2
 }
 
-# Carpeta donde están tus archivos
+## Define path where there are the results of the simulated models
+
 folder = '/home/jose-carlos-moreno-juarez/Documentos/Z_diploperennis/out/dadi/demographic_models/'
 
-# Buscar todos los archivos *_fits.txt
+## Search for all the files Jalisco_*_fits.txt
+
 files = glob.glob(os.path.join(folder, 'Jalisco_*_fits.txt'))
+
+## Loop for the extraction of the best likelihood of each model and the estimation of the AIC of each model
 
 for file in files:
     model_name = os.path.basename(file).replace('Jalisco_', '').replace('_fits.txt', '')
@@ -39,9 +48,15 @@ for file in files:
     aic = 2 * k - 2 * max_ll
     aic_results[model_name] = {'logL': max_ll, 'k': k, 'AIC': aic}
 
-# Mostrar los resultados ordenados por AIC
+## Print and sort the AIC values
+
 aic_df = pd.DataFrame.from_dict(aic_results, orient='index')
 aic_df = aic_df.sort_values('AIC')
 print("\n📊 Comparación de modelos con AIC:")
 print(aic_df)
 
+## Save the values in a .txt file
+
+output_file = os.path.join(folder, 'AIC_results_Ja.txt')
+aic_df.to_csv(output_file, sep='\t', index=True)
+print(f"\n💾 Resultados guardados en: {output_file}")
