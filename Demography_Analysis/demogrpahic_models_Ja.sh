@@ -47,4 +47,5 @@ python Godambe_bottlegrowth_Ja.py
 
 # Nayarit
 python Godambe_bottlegrowth_Na.py
+python Godambe_twoepoch_Na.py
 
