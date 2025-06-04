@@ -1,4 +1,22 @@
 # Install and load adegenet and Rtools, if necessary
+install.packages("Rcpp")
+install.packages("stringi") 
+install.packages("RcppArmadillo")
+install.packages("ade4")
+install.packages("sass")
+install.packages("httpuv")
+install.packages("promises")
+install.packages("bslib")
+install.packages("isoband")
+install.packages("igraph")
+install.packages("ape")
+install.packages("shiny")
+install.packages("ggplot2")
+install.packages("seqinr")
+
+
+
+
 options(
   repos = c(
     zkamvar = "https://zkamvar.r-universe.dev",
@@ -29,8 +47,12 @@ dapc_data$pop <- pop_vector
 grp <- find.clusters(dapc_data, max.n.clust = 11)
 
 #correspondance of the inferred clusters with the original clusters in the data set
-table.value(table(pop(dapc_data), grp$grp), col.lab=paste("inf", 1:10),
-            row.lab=paste("ori", 1:10))
+table.value(
+  table(pop(dapc_data), grp$grp),
+  col.lab = paste("inf", levels(grp$grp)),
+  row.lab = levels(dapc_data$pop)
+)
+
 
 #Discriminant Analysis of Principal Components. 80 PC retained and 1 discrimant function retained
 dapc_result <- dapc(dapc_data, grp$grp)
